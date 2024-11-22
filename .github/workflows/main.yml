@@ -24,7 +24,7 @@ jobs:
 
       - name: Start Ngrok
         run: |
-          ./ngrok authtoken <Your_Ngrok_Auth_Token>
+          ./ngrok authtoken <2p9hJcM9O7144623ElPTS1sHZhV_5K1Zb3uy95dcZfNLF3SnM>
           nohup ./ngrok http 80 &
           sleep 5
           curl -s http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
